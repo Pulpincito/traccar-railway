@@ -8,7 +8,7 @@ RUN wget https://github.com/traccar/traccar/releases/download/v${TRACCAR_VERSION
     && unzip /tmp/traccar.zip -d /opt/traccar \
     && rm /tmp/traccar.zip
 
-WORKDIR /opt/traccar
+WORKDIR /opt/traccar/tracker-server
 
 EXPOSE 8082
 
